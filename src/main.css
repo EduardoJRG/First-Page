@@ -1,0 +1,243 @@
+body {
+  background-color: whitesmoke;
+}
+
+#product-overview {
+  /* background:
+    url("") center/cover border-box; */
+    background-color: burlywood;
+  
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+  border-bottom: 1px solid black;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  
+}
+
+#product-overview h1 {
+  color: black;
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  text-shadow: rgb(83, 85, 88) 0.1em 0.1em 0.2em;
+  width: auto;
+}
+
+@media (min-width: 40rem)  {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 50%;
+  }
+
+  #product-overview h1 {
+    color: black;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    padding-right: 2.2rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#curso-top {
+  color: black;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 3.2rem;
+}
+
+.button__main {
+  color: white;
+  background: red;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.button__main:hover,
+.button__main:active {
+  color: red;
+  background: white;
+  border: none;
+}
+
+.plan {
+  background-color: grey;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  color: white;
+}
+
+
+.plan--highlighted {
+  background: #C8C9C8;
+  color: black;
+}
+
+.plan__annotation {
+  background: rgb(63, 63, 63);
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.plan__title {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.plan__price {
+  color: green;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 0;
+  margin-bottom: 0.4rem;
+}
+
+
+#img__main--plan3 {
+  padding-right: 0.3rem;
+
+}
+
+.plan--highlighted .plan__title {
+  color: black;
+  font-size: 1rem;
+}
+
+.plan--highlighted .plan__price {
+  color: greenyellow;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 0;
+  margin-bottom: 0.4rem;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__feature {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan {
+    width: 30%;
+    min-width: 13rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 50;
+  }
+
+  #img__main--plan3 {
+    padding-right: 0.1rem;
+  }
+
+}
+
+#key-features {
+  background: black;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+#key-features .section-title {
+  color: #ccc;
+  margin: 2rem;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature__image {
+  background: #d4dae2;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    width: 30%;
+    max-width: 25rem;
+  }
+
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+*{box-sizing:border-box;}
+
+		.container{
+			width:95%;
+			max-width:900px;
+			padding:32px 64px;
+			margin:auto;
+		}
+
+		.social{
+			/*las imágenes usadas tienen width de 48px*/
+			width:48px;
+			position:fixed;
+			top:50px;
+			right:0;
+		}
+
+		/* Extra centrado vertical*/
+
+		.social{
+			/*border:1px solid #000;*/
+			top:50%;
+			height:205px;
+			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+			margin-top:-100px;
+		}
